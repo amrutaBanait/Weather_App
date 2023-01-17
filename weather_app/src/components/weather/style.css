@@ -29,8 +29,8 @@
     display: grid;
     place-items: center;
   }
-  
-  /* input search button style  */
+
+  /* search bar style  */
 .search {
     width: 100%;
     position: relative;
@@ -40,7 +40,6 @@
   
   .searchTerm {
     width: 50%;
-    /* border: 3px solid #00b4cc; */
     border: none;
     padding: 16px;
     height: 20px;
@@ -51,4 +50,31 @@
   
   .searchTerm:focus {
     color: #00b4cc;
+  }
+
+/*button styles*/
+  .searchButton {
+    width: 80px;
+    height: 32px;
+    border: none;
+    background: #048b9c;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .searchButton:hover {
+    background-color: #17b8ce;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -150px;
+    margin-bottom: 50px;
   }

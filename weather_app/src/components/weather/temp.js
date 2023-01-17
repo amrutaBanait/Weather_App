@@ -13,8 +13,11 @@ const temp = () => {
     id="search"
     className="searchTerm"
     />
+     <button className="searchButton" type="button">
+        Search
+    </button>
     </div>
-
+   
    </div>
    </>
   )
