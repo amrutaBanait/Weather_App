@@ -30,6 +30,17 @@
     place-items: center;
   }
 
+  .widget {
+    display: flex;
+    height: 400px;
+    width: 650px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+      0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  }
+  
   /* search bar style  */
 .search {
     width: 100%;

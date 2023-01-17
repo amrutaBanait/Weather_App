@@ -17,8 +17,12 @@ const temp = () => {
         Search
     </button>
     </div>
-   
    </div>
+
+  {/*temp card*/} 
+    <article className="widget">
+        
+    </article>
    </>
   )
 }
