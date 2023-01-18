@@ -24,19 +24,19 @@ const temp = () => {
         <div className="weatherIcon">
           <i className="wi wi-day-sunny"> </i>
         </div>
+        
         <div className="weatherInfo">
           <div className="temperature">
             <span>25.5&deg;</span>
           </div>
+
           <div className="description">
-            <div className="weatherCondition">
-                Sunny
-            </div>
-            <div className="place">
-                Nashik, India
-            </div>
+            <div className="weatherCondition">Sunny</div>
+              
+            <div className="place">Nashik,India</div>
           </div>
         </div>
+         <div className="date">{new Date().toLocalString()}</div> 
       </article>
     </>
   );
