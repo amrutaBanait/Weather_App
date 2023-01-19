@@ -2,7 +2,17 @@ import React from 'react'
 
 {/*temp card*/}
       
-const weatherCard = () =>{
+const WeatherCard = ({tempInfo}) => {
+   const {
+        temp,
+        pressure,
+        humidity,
+        weathermood,
+        name,
+        speed,
+        country,
+        sunset
+      } = tempInfo;
     return (
         <>
     <article className="widget">
@@ -76,4 +86,4 @@ const weatherCard = () =>{
     )
 }
 
-export default weatherCard;
+export default WeatherCard;

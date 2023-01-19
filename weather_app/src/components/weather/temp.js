@@ -1,6 +1,7 @@
 import React from 'react'
 import "./style.css";
 import {useState, useEffect} from 'react';
+import WeatherCard from "./weatherCard";
 
 const Temp = () => {
 const [searchValue, setSearchValue] = useState("Nashik") 
@@ -61,7 +62,7 @@ useEffect (() =>{
         </div>
       </div>
 
-      
+      <WeatherCard tempInfo={tempInfo}/>
     </>
   );
 }
