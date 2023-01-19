@@ -62,7 +62,7 @@ useEffect (() =>{
         </div>
       </div>
 
-      <WeatherCard tempInfo={tempInfo}/>
+      <WeatherCard {...tempInfo}/>
     </>
   );
 }
