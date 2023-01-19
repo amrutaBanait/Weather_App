@@ -14,6 +14,10 @@ const WeatherCard = ({tempInfo}) => {
         sunset
       } = tempInfo;
 
+      //converting seconds into time
+        let sec = sunset;
+        let date = new Date(sec * 1000);
+        let timeStr = `${date.getHours()}:${date.getMinutes()}`
     return (
         <>
     <article className="widget">
@@ -44,7 +48,7 @@ const WeatherCard = ({tempInfo}) => {
               <i className="wi wi-sunset"> </i>
             </p>
             <p className="extra-info-leftside">
-                {sunset} PM <br/>
+                {timeStr} PM <br/>
                 Sunset
             </p>
             </div>
