@@ -1,8 +1,9 @@
 import React from 'react'
-
+import {useState, useEffect} from "react";
 {/*temp card*/}
       
 const WeatherCard = ({tempInfo}) => {
+    const [weatherState, setWeatherState] = useState("")
    const {
         temp,
         pressure,
@@ -13,6 +14,26 @@ const WeatherCard = ({tempInfo}) => {
         country,
         sunset
       } = tempInfo;
+
+    //to show weather icon
+      useEffect( () =>{
+        if(weathermood){
+            switch (weathermood){
+                case "Clouds": 
+                setWeatherState("wi-day-cloudy")
+                    break;
+                    case "Haze": 
+                setWeatherState("wi-fog")
+                    break;
+                    case "Clear": 
+                setWeatherState("wi-day-sunny")
+                    break;
+                    default:
+                        setWeatherState("wi-day-sunny")
+                        break;
+            }
+        }
+      }, [weathermood])
 
       //converting seconds into time
         let sec = sunset;
