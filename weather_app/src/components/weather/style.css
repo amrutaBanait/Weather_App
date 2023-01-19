@@ -122,7 +122,14 @@
     color: #70c1b3;
     /* background-color: blanchedalmond; */
   }
-    
+  .widget .extra-temp .extra-info-leftside {
+    text-align: left;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #080705;
+    font-size: 15px;
+  }
+  
   /* search bar style  */
 .search {
     width: 100%;

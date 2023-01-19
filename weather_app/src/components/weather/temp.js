@@ -47,6 +47,42 @@ const temp = () => {
             <p>
               <i className="wi wi-sunset"> </i>
             </p>
+            <p className="extra-info-leftside">
+                20.20
+                Sunset
+            </p>
+            </div>
+
+               <div className="two-sided-section">
+            <p>
+              <i className="wi wi-humidity"> </i>
+            </p>
+            <p className="extra-info-leftside">
+                20.20
+                Humidity
+            </p>
+            </div>
+          </div>
+
+
+          <div className="weather-extra-info">
+             <div className="two-sided-section">
+            <p>
+              <i className="wi wi-rain"> </i>
+            </p>
+            <p className="extra-info-leftside">
+                20.20
+              Pressure
+            </p>
+            </div>
+             <div className="two-sided-section">
+            <p>
+              <i className="wi wi-strong-wind"> </i>
+            </p>
+            <p className="extra-info-leftside">
+                20.20
+                Speed
+            </p>
             </div>
           </div>
          </div>
