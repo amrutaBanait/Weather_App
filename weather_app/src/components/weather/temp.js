@@ -36,7 +36,8 @@ const temp = () => {
             <div className="place">Nashik,India</div>
           </div>
         </div>
-         <div className="date">{new Date().toLocalString()}</div> 
+
+         {/* <div className="date">{new Date().toLocalString()}</div>  */}
       </article>
     </>
   );

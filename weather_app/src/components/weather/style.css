@@ -84,6 +84,18 @@
   .widget .weatherInfo .description .place {
     font-size: 15px;
   }
+  .widget .date {
+    flex: 0 0 30%;
+    height: 40%;
+    background: #70c1b3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
   /* search bar style  */
 .search {
     width: 100%;
