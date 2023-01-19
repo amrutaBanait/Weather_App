@@ -12,8 +12,24 @@ try{
     const result = await fetch(url);
     const data = await result.json();
     // console.log(data);
-    const {temp} = data.main;
-    console.log(temp)
+
+    const {temp,pressure,humidity} = data.main;
+    const { main:weathermood } = data.weather[0]
+    const {name} = data;
+    const {speed} = data.wind
+    const {country, sunset} = data.sys
+   
+    const myNewWeatherInfo = {
+      temp,
+      pressure,
+      humidity,
+      weathermood,
+      name,
+      speed,
+      country,
+      sunset
+    };
+    
 }catch(error){
   console.log(error, "error")
 }
