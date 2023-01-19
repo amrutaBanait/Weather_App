@@ -4,6 +4,7 @@ import {useState, useEffect} from 'react';
 
 const Temp = () => {
 const [searchValue, setSearchValue] = useState("Nashik") 
+const [tempInfo, setTempInfo] = useState({});
 
 const getWeatherInfo = async() =>{
 try{
@@ -29,7 +30,7 @@ try{
       country,
       sunset
     };
-    
+setTempInfo (myNewWeatherInfo)
 }catch(error){
   console.log(error, "error")
 }
