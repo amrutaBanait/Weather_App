@@ -1,13 +1,17 @@
 import React from 'react'
 import "./style.css";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
-const temp = () => {
+const Temp = () => {
 const [searchValue, setSearchValue] = useState("Nashik") 
 
 const getWeatherInfo = async() =>{
 try{
-    let url = "api.openweathermap.org/data/2.5/weather?q=pune&appid=68e6879f536e665674e71142cacb2034"
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=68e6879f536e665674e71142cacb2034`
+
+    const result = await fetch(url);
+    const data = await result.json();
+    console.log(data);
 }catch(error){
   console.log(error, "error")
 }
@@ -110,4 +114,4 @@ useEffect (() =>{
   );
 }
 
-export default temp
+export default Temp
