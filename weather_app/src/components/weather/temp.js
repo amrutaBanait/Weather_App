@@ -5,6 +5,17 @@ import {useState} from 'react';
 const temp = () => {
 const [searchValue, setSearchValue] = useState("Nashik") 
 
+const getWeatherInfo = async() =>{
+try{
+    let url = "api.openweathermap.org/data/2.5/weather?q=pune&appid=68e6879f536e665674e71142cacb2034"
+}catch(error){
+  console.log(error, "error")
+}
+}
+
+useEffect (() =>{
+  getWeatherInfo()
+},[])
   return (
     <>
       <div className="wrap">
@@ -15,8 +26,8 @@ const [searchValue, setSearchValue] = useState("Nashik")
             autofocus
             id="search"
             className="searchTerm"
-            value={}
-            onChange={}
+            value={searchValue}
+            onChange={ (e) => setSearchValue(e.target.value)}
           />
           <button 
           className="searchButton" 
