@@ -1,7 +1,10 @@
 import React from 'react'
 import "./style.css";
+import {useState} from 'react';
 
 const temp = () => {
+const [searchValue, setSearchValue] = useState("Nashik") 
+
   return (
     <>
       <div className="wrap">
@@ -12,8 +15,13 @@ const temp = () => {
             autofocus
             id="search"
             className="searchTerm"
+            value={}
+            onChange={}
           />
-          <button className="searchButton" type="button">
+          <button 
+          className="searchButton" 
+          type="button"
+          onClick={getWeatherInfo}>
             Search
           </button>
         </div>
