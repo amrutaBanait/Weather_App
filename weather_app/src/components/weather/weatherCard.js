@@ -28,6 +28,9 @@ const WeatherCard = ({tempInfo}) => {
                     case "Clear": 
                 setWeatherState("wi-day-sunny")
                     break;
+                    case "Mist": 
+                setWeatherState("wi-dust")
+                    break;
                     default:
                         setWeatherState("wi-day-sunny")
                         break;
@@ -52,7 +55,7 @@ const WeatherCard = ({tempInfo}) => {
           </div>
 
           <div className="description">
-            <div className="weatherCondition">Sunny</div>
+            <div className="weatherCondition">{weathermood}</div>
               
             <div className="place">{name},{country}</div>
           </div>
