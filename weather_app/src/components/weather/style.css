@@ -96,6 +96,33 @@
     font-weight: 800;
     text-align: center;
   }
+
+  .widget .extra-temp {
+    flex: 1 100%;
+    padding: 5% 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #fafafa;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    font-size: 100px;
+  }
+  .widget .extra-temp p {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .temp-info-minmax,
+  .weather-extra-info,
+  .two-sided-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    color: #70c1b3;
+    /* background-color: blanchedalmond; */
+  }
+    
   /* search bar style  */
 .search {
     width: 100%;

@@ -38,6 +38,18 @@ const temp = () => {
         </div>
 
          {/* <div className="date">{new Date().toLocalString()}</div>  */}
+
+         {/* 4 column section */}
+         
+         <div className="extra-temp">
+          <div className="temp-info-minmax">
+            <div className="two-sided-section">
+            <p>
+              <i className="wi wi-sunset"> </i>
+            </p>
+            </div>
+          </div>
+         </div>
       </article>
     </>
   );
