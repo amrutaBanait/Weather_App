@@ -13,6 +13,7 @@ const WeatherCard = ({tempInfo}) => {
         country,
         sunset
       } = tempInfo;
+
     return (
         <>
     <article className="widget">
@@ -22,13 +23,13 @@ const WeatherCard = ({tempInfo}) => {
         
         <div className="weatherInfo">
           <div className="temperature">
-            <span>25.5&deg;</span>
+            <span>{temp}&deg;</span>
           </div>
 
           <div className="description">
             <div className="weatherCondition">Sunny</div>
               
-            <div className="place">Nashik,India</div>
+            <div className="place">{name},{country}</div>
           </div>
         </div>
 
@@ -43,7 +44,7 @@ const WeatherCard = ({tempInfo}) => {
               <i className="wi wi-sunset"> </i>
             </p>
             <p className="extra-info-leftside">
-                20.20
+                {sunset} PM <br/>
                 Sunset
             </p>
             </div>
@@ -53,7 +54,7 @@ const WeatherCard = ({tempInfo}) => {
               <i className="wi wi-humidity"> </i>
             </p>
             <p className="extra-info-leftside">
-                20.20
+              {humidity} <br/>
                 Humidity
             </p>
             </div>
@@ -66,7 +67,7 @@ const WeatherCard = ({tempInfo}) => {
               <i className="wi wi-rain"> </i>
             </p>
             <p className="extra-info-leftside">
-                20.20
+               {pressure} <br/>
               Pressure
             </p>
             </div>
@@ -75,7 +76,7 @@ const WeatherCard = ({tempInfo}) => {
               <i className="wi wi-strong-wind"> </i>
             </p>
             <p className="extra-info-leftside">
-                20.20
+               {speed} <br/>
                 Speed
             </p>
             </div>
