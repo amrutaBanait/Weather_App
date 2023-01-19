@@ -7,11 +7,13 @@ const [searchValue, setSearchValue] = useState("Nashik")
 
 const getWeatherInfo = async() =>{
 try{
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=68e6879f536e665674e71142cacb2034`
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=68e6879f536e665674e71142cacb2034`
 
     const result = await fetch(url);
     const data = await result.json();
-    console.log(data);
+    // console.log(data);
+    const {temp} = data.main;
+    console.log(temp)
 }catch(error){
   console.log(error, "error")
 }
@@ -31,7 +33,7 @@ useEffect (() =>{
             id="search"
             className="searchTerm"
             value={searchValue}
-            onChange={ (e) => setSearchValue(e.target.value)}
+            onChange={(e) => setSearchValue(e.target.value)}
           />
           <button 
           className="searchButton" 
